@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://tangent-ui.netlify.app/components/component.css" referrerpolicy="no-referrer"> -->
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>signup</title>
 </head>
 <body>
     <div class="navbar">
@@ -24,7 +23,7 @@
            
         </div>
         <div class="navbar-action">
-            <a class="btn btn-login" href="./login.html">Login</a>
+            <button class="btn btn-login">login</button>
             <div class="badge-container">
                     <span class="material-icons-round drawer-icons">
                         favorite_border
@@ -41,6 +40,29 @@
             <a class="btn btn-link">Cart</a>
         </div>
     </div>
-    <div class="container"></div>
+    <div class="signup-body-container">
+        <div class="signup-container">
+            <div class="title-header">Signup</div>
+            <div class="signup-credential-container">
+                <label>Email Address</label>
+                <input placeholder="xyz@gmail.com">
+            </div>
+            <div class="signup-credential-container">
+                <label>Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="signup-rem-forgetpass-container">
+                <div>
+                    <input type="checkbox" name="" id="">
+                    I accept all Terms & Conditions
+                </div>
+            </div>
+            <div class="signup-btn-container"><a class="btn signup-action-btn">Signup</a></div>
+            <a class="signup-footer" href="./login.html">Already have an Account <span class="material-icons-round">
+                navigate_next
+                </span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
