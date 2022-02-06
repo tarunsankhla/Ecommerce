@@ -1,7 +1,7 @@
 
 @import url(https://tangent-ui.netlify.app/components/component.css);
-@import url(./login.css);
-@import url(./signup.css);
+@import url(./Login/login.css);
+@import url(./SignUp/signup.css);
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +13,8 @@ html{
 }
 :root{
     --bg-color:rgb(249 250 251);
+    --container-bg-color: #f1f3f3;
+    --banner-bg-color:#d4d9dd;
 
     --border-radius:7px;
 }
@@ -38,6 +40,10 @@ html{
     height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 }
 
 /* search bar */
@@ -75,4 +81,98 @@ html{
 
 .badge-container {
     margin: 1rem;
+}
+
+/*  Home page  */
+.img-slide{
+    height: 15rem;
+    width: 22rem;
+    padding:1rem;
+}
+
+.list-img-slider{
+    display: block;
+    position: relative;
+}
+
+.underlist-img-slider{
+    overflow-x: scroll;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+}
+
+.overlay-img-slider{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    background-color: white;
+    /* width: 100%; */
+    z-index: 9999;
+    left: 0;
+    width: -webkit-fill-available;
+    justify-content: center;
+    display: flex;
+
+}
+
+.home-conatainer-1{
+    height: 60vh;
+    width: 80%;
+    background-color: var(--container-bg-color);
+    margin-top: 2rem;
+}
+
+/* banner */
+
+.banner-collection{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.banner{
+    display: flex;
+    width: 40%;
+    /* height: 20em; */
+    min-width: 32rem;
+    background-color: var(--banner-bg-color);
+    margin: 1rem;
+    flex-grow: 1;
+padding: 1rem;
+}
+
+.banner-img{
+    width: 15rem;
+    height: auto;
+    padding :1rem;
+}
+
+.banner-tag{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 2rem 1rem; */
+    gap: 3rem;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content > h1{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+}
+
+.banner-content-desc{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
 }
