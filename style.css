@@ -1,7 +1,9 @@
 
 @import url(https://tangent-ui.netlify.app/components/component.css);
-@import url(./Login/login.css);
-@import url(./SignUp/signup.css);
+@import url(./src/Login/login.css);
+@import url(./src/SignUp/signup.css);
+@import url(./src/ProductListPage/productListPage.css);
+@import url(./src/WishListPage/wishlistpage.css);
 *{
     margin: 0;
     padding: 0;
