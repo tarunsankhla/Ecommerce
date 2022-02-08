@@ -92,12 +92,12 @@ html{
 
 .list-img-slider{
     display: block;
-    position: relative;
+    position: relative; 
 }
 
 .underlist-img-slider{
     overflow-x: scroll;
-    width: 100vw;
+    width: 95vw;
     height: fit-content;
     display: flex;
 }
@@ -117,10 +117,17 @@ html{
 }
 
 .home-conatainer-1{
-    height: 60vh;
-    width: 80%;
+    height: fit-content;
+    width: 90%;
     background-color: var(--container-bg-color);
     margin-top: 2rem;
+}
+
+.container-img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /* banner */
@@ -129,6 +136,7 @@ html{
     display: flex;
     padding: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .banner{
@@ -140,6 +148,7 @@ html{
     margin: 1rem;
     flex-grow: 1;
 padding: 1rem;
+cursor: pointer;
 }
 
 .banner-img{
