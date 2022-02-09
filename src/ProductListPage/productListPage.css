@@ -5,7 +5,6 @@
 }
 
 .aside{
-    /* flex-grow: 1; */
     flex-basis: 27rem;
     background-color: white;
     height: 100vh;
@@ -60,11 +59,11 @@ label{
     padding: 0.5rem;
 }
 
-.sortBy-conatianer{
+.sort-by-conatianer{
     padding: 1rem;
 }
 
-.sortBy-conatianer div{
+.sort-by-conatianer div{
     padding: 0.5rem;
 }
 
