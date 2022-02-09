@@ -21,4 +21,6 @@
 .title-wishlist{
     margin: auto;
     padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
