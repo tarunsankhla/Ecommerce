@@ -59,7 +59,9 @@
 
 .cart-aside-footer > button:hover{
     transform: scale(0.98);
-    background-color: var(--cart-button-color)
+    transition: transform 1s;
+    opacity: 0.9;
+    /* background-color: var(--cart-button-color) */
 }
 
 .cart-banner-stretch{
@@ -81,4 +83,15 @@
 
 .card-content{
     height: fit-content;
+}
+
+.cart-card-footer-flex{
+    display: flex;
+    flex-grow: 1;
+    justify-content: start;
+}
+
+.cart-card-footer-flex button:hover{
+    transition: transform 1s;
+    transform: scale(0.97);
 }
