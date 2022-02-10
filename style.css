@@ -18,7 +18,7 @@ html{
     --bg-color:rgb(249 250 251);
     --container-bg-color: #f1f3f3;
     --banner-bg-color:#d4d9dd;
-
+    --cart-button-color : rgb(53, 53, 80);
     --border-radius:7px;
 }
 body::-webkit-scrollbar{
