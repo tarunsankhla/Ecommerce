@@ -59,14 +59,13 @@
 
 .cart-aside-footer > button:hover{
     transform: scale(0.98);
-    background-color: rgb(53, 53, 80);
+    background-color: var(--cart-button-color)
 }
 
 .cart-banner-stretch{
     width: 100%;
     height: fit-content;
     flex-wrap: wrap;
-    /* height: 18rem; */
 }
 
 .cart-card-horizontal-layout{
