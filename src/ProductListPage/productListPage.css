@@ -7,10 +7,10 @@
 .aside{
     flex-basis: 27rem;
     background-color: white;
-    height: 100vh;
+    /* height: 100vh;
     display: flex;
     flex-direction: column; 
-    margin: auto;
+    margin: auto; */
 }
 
 .main{
