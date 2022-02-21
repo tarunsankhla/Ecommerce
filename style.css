@@ -52,13 +52,13 @@ body::-webkit-scrollbar:hover{
     padding-top: 1rem;
 }
 
-.navbar .project-title{
+/* .navbar .project-title{
     margin: 1rem;
     text-decoration: none;
     font-size: 3rem;
     font-weight: 700;
     color: rgb(25, 1, 44);
-}
+} */
 
 .navbar-action{
     display: flex;
@@ -77,11 +77,9 @@ body::-webkit-scrollbar:hover{
 }
 
 .container{
-    /* height: 100vh; */
     width: 100%;
     background-color: var(--bg-color);
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -308,6 +306,12 @@ footer{
     transform: scale(1.01);
     opacity: 1.1;
     background-color: rgba( var(--footer-bg-color),0.8) ;
+}
+
+.title-logo{
+    height: 6rem;
+    width: 9rem;
+    border-radius: 50%;
 }
 
 .footer-base{

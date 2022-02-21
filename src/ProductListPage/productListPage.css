@@ -67,14 +67,6 @@ label{
     padding: 0.5rem;
 }
 
-/* .badge-warning {
-    background-color: #ffffff;
-}
-
-.badge{
-    color: black;
-} */
-
 .product-main-list{
     display: flex;
     flex-wrap: wrap;
