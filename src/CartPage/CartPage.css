@@ -86,10 +86,11 @@
 }
 
 .cart-card-footer-flex{
-    display: flex;
-    flex-grow: 1;
+    display: flex;  
     justify-content: start;
 }
+.cart-card-footer-flex button{
+    width:18rem}
 
 .cart-card-footer-flex button:hover{
     transition: transform 1s;

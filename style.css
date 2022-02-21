@@ -20,6 +20,11 @@ html{
     --banner-bg-color:#d4d9dd;
     --cart-button-color : rgb(53, 53, 80);
     --border-radius:7px;
+
+
+    --footer-bg-color:rgb(59, 59, 59);
+    --pink-bg-color:#ffe0e5;
+    --text-color:#27474e;
 }
 body::-webkit-scrollbar{
     width: 1rem;
@@ -47,28 +52,34 @@ body::-webkit-scrollbar:hover{
     padding-top: 1rem;
 }
 
-.navbar .project-title{
+/* .navbar .project-title{
     margin: 1rem;
     text-decoration: none;
     font-size: 3rem;
     font-weight: 700;
     color: rgb(25, 1, 44);
-}
+} */
 
 .navbar-action{
     display: flex;
     justify-content: space-evenly;
     /* width: 20%; */
     width: fit-content;
+    align-items: center;
 }
 
+.navbar-action a{
+    text-decoration: none;
+}
+.navbar-action a:hover{
+    transform: scale(1.1);
+    opacity: 1.1;
+}
 
 .container{
-    height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -105,6 +116,9 @@ body::-webkit-scrollbar:hover{
     padding: 0.5rem 2rem;
     display: flex;
     align-items: center;
+    background-color: transparent;
+    text-decoration: none; 
+    color: var(--text-color);
 }
 
 .badge-container {
@@ -162,11 +176,30 @@ body::-webkit-scrollbar:hover{
     opacity: 0.7;
 }
 
-.home-conatainer-1{
+.home-container-main-1{
     height: fit-content;
     width: 90%;
     background-color: var(--container-bg-color);
     margin-top: 2rem;
+    position: relative;
+}
+
+.product-check-navigator{
+    text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--pink-bg-color);
+    color: var(--text-color);
+}
+
+.product-check-navigator:hover{
+    transform: scale(0.9) 2s;
+    opacity: 0.83;
 }
 
 .container-img{
@@ -193,8 +226,13 @@ body::-webkit-scrollbar:hover{
     background-color: var(--banner-bg-color);
     margin: 1rem;
     flex-grow: 1;
-padding: 1rem;
-cursor: pointer;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.banner:hover{
+    transform: scale(1.01);
+    opacity: 0.9;
 }
 
 .banner-img{
@@ -230,4 +268,60 @@ cursor: pointer;
 .banner-content-desc{
     font-size: 1.8rem;
     line-height: 2.7rem;
+}
+
+.text-linethrough{
+    color: red;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #27474e;
+    background-color: var(--footer-bg-color);
+    color: #d4d9dd;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-container *{
+    flex-grow: 1;
+}
+
+.footer-container div{
+    padding: 1rem;
+}
+
+.footer-container ul{
+    padding: 1rem;
+}
+
+.list-body-item:hover{
+    transform: scale(1.01);
+    opacity: 1.1;
+    background-color: rgba( var(--footer-bg-color),0.8) ;
+}
+
+.title-logo{
+    height: 6rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.footer-base{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-base-content{
+    display: flex;
+    justify-content: flex-end;
 }
