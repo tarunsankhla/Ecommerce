@@ -2,6 +2,8 @@
 
  You can check the Website on https://feetz.netlify.app/
 
+
+Feetz is Ecommerce platform for variety of footwear from boots, snicker, sports footwear. All in here!!
  <p align="center"> <img src="https://github.com/tarunsankhla/Ecommerce/blob/master/asset/img/logo.png" alt="logoImage" width="200px" height="200px" /></p>
  <br/>
  
