@@ -10,7 +10,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/adcfa4f3-f1ea-4b60-bda0-c477df35810f/deploy-status)](https://app.netlify.com/sites/feetz/deploys) &nbsp;&nbsp;&nbsp;
  <hr/>
  
-  <p align="center"> <img src="https://github.com/tarunsankhla/Ecommerce/blob/master/asset/img/logo_banner.png" alt="logoImage" width="100%" height="200px" /></p>
+  <p align="center"> <img src="https://github.com/tarunsankhla/Ecommerce/blob/master/asset/img/logo_banner.png" alt="logoImage" width="100%" height="auto" /></p>
  <br/>
 
 
