@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../../style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
+    <script src="./product.js" defer></script>
     <title>Feetz</title>
 </head>
-<body>
+<body onresize="alterClass()">
     <div class="navbar">
         <a class="project-title" href="../../index.html">
             <img src="../../asset/img/logo.png" class="title-logo"/>
@@ -40,19 +41,27 @@
             <!-- <a class="btn btn-link">Cart</a> -->
         </div>
     </div>
-
+    <a class="btn filter-btn">
+        <span class="material-icons-round">
+            filter_list
+            </span>Filter</a>
     <div class="product-page-container">
         <aside class="aside">
+            <div class="toggler">
+                <span class="material-icons-round ">
+                    cancel
+                </span>
+            </div>
             <div class="aside-header">
-                <h1>Filters</h1>
+                <h3>Filters</h3>
                 <a>Clear</a>
             </div>
             <div class="price-container">
-                <h2>Price</h2>
+                <h4>Price</h4>
                 <input type="range" value="50" max="100" min="0" class="price-slider">
             </div>
             <div class="product-page-category">
-                <h2>Category</h2>
+                <h4>Category</h4>
                 <div>
                     <input class="checkbox-sneakers" type="checkbox" name="sneakers" value="sneakers">
                     <label for="sneakers">Sneakers</label>
@@ -71,7 +80,7 @@
                 </div>
             </div>
             <div class="rating-container">
-                <h2>Rating</h2>
+                <h4>Rating</h4>
                 <div>
                     <input type="radio" id="4stars" name="drone" value="4stars"
                            checked>
@@ -94,7 +103,7 @@
 
             </div>
             <div class="sort-by-conatianer">
-                <h2>Sort by</h2>
+                <h4>Sort by</h4>
                 <div>
                     <input type="radio" id="lth" name="price" value="lth"
                            checked>

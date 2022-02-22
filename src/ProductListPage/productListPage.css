@@ -6,7 +6,7 @@
 
 .aside{
     flex-basis: 27rem;
-    background-color: white;
+    background-color: var(--shadow-bg);
     /* height: 100vh;
     display: flex;
     flex-direction: column; 
@@ -70,4 +70,55 @@ label{
 .product-main-list{
     display: flex;
     flex-wrap: wrap;
+}
+
+.toggler{
+    cursor: pointer;
+    margin-left: 86%;
+    font-weight: 600;
+    font-size: 3rem;
+    background-color: transparent;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+.filter-btn{
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 2rem;
+    width: 50vw;
+    display: block;
+    margin-top: 2rem;
+    background-color: #e7edef;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-btn:hover{
+    transform: scale(1.1);
+    opacity: 1.1;
+}
+@media screen and (max-width: 800px) {
+    aside{
+        border: 1px solid black;
+        flex-basis: 15rem;
+        min-width: 65vw;
+        border-top: 2px solid black;
+        height: 100%;
+        width: 0;
+        z-index: 1;
+        /* top: 27%; */
+        left: 20%;
+        background-color: white;
+        transition: 0.5s;
+        position: fixed;
+        height: 75vh;
+        overflow-y: scroll;
+        /* margin: auto;*/
+    }
 }

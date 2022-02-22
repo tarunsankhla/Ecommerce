@@ -43,7 +43,7 @@ body::-webkit-scrollbar:hover{
     cursor: pointer;
 }
 .navbar{
-    background-color: white;
+    background-color: #f3f7f8;
     display: flex;
     justify-content: space-around;
     font-size: 2rem;
