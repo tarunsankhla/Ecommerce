@@ -116,9 +116,9 @@ label{
         left: 20%;
         background-color: white;
         transition: 0.5s;
-        position: fixed;
-        height: 75vh;
-        overflow-y: scroll;
+        position: absolute;
+        height: 65vh;
+        overflow: scroll;
         /* margin: auto;*/
     }
 }
