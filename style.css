@@ -20,7 +20,7 @@ html{
     --banner-bg-color:#d4d9dd;
     --cart-button-color : rgb(53, 53, 80);
     --border-radius:7px;
-
+    --shadow-bg :#f2f2f2;
 
     --footer-bg-color:rgb(59, 59, 59);
     --pink-bg-color:#ffe0e5;
@@ -187,8 +187,8 @@ body::-webkit-scrollbar:hover{
 .product-check-navigator{
     text-decoration: none;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 4rem;
+    /* left: 40%; */
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -244,6 +244,8 @@ body::-webkit-scrollbar:hover{
 .banner-tag{
     font-size: 1.8rem;
     line-height: 2.7rem;
+    color: red;
+    font-weight: 500;
 }
 
 .banner-container{
@@ -288,6 +290,7 @@ footer{
     justify-content: space-evenly;
     font-size: 1.5rem;
     flex-wrap: wrap;
+    padding: 1rem;
 }
 
 .footer-container *{
