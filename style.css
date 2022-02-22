@@ -138,10 +138,11 @@ body::-webkit-scrollbar:hover{
 }
 
 .underlist-img-slider{
-    overflow-x: scroll;
+    overflow-x: hidden;
     width: 95vw;
     height: fit-content;
     display: flex;
+    justify-content: center;
 }
 
 .underlist-img-slider::-webkit-scrollbar{
@@ -188,7 +189,7 @@ body::-webkit-scrollbar:hover{
     text-decoration: none;
     position: absolute;
     top: 4rem;
-    /* left: 40%; */
+    left: 2rem;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -251,7 +252,7 @@ body::-webkit-scrollbar:hover{
 .banner-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* padding: 2rem 1rem; */
     gap: 3rem;
 }
@@ -263,13 +264,13 @@ body::-webkit-scrollbar:hover{
 
 .banner-content > h1{
     font-weight: 700;
-    font-size: 2.8rem;
-    line-height: 4.2rem;
+    font-size: 2.5rem;
+    /* line-height: 4.2rem; */
 }
 
 .banner-content-desc{
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    font-size: 1.5rem;
+    /* line-height: 2.7rem; */
 }
 
 .text-linethrough{
@@ -328,3 +329,36 @@ footer{
     display: flex;
     justify-content: flex-end;
 }
+
+/* auto slide */
+
+@keyframes framerateslideplay {
+    0% {left: 100%}
+    4% {left: 0%}
+    33.33% {left: 0%}
+    37.33% {left: -100%}
+    100% {left: -100%}
+  }
+
+
+.listImgSlide {
+    height: 20rem;
+    width: 22rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.listImgSlide > * {
+    position: absolute; 
+    left: 100%; 
+    top: 0;
+    animation: 12s framerateslideplay infinite ease-in-out
+}
+
+.listImgSlide > *:nth-child(1) {animation-delay: 0s}
+.listImgSlide > *:nth-child(2) {animation-delay: 4s}
+.listImgSlide > *:nth-child(3) {animation-delay: 8s}
+
